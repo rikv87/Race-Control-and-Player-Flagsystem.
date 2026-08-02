@@ -1,0 +1,95 @@
+# 🏁 LMU Race Control Hub: User Manual
+
+Welcome to the **LMU Race Control Hub**! This application serves as a centralized digital command center for sim racing Race Directors. By running this executable, you can monitor live driver telemetry, deploy track-wide flags, enforce speed limits, and manage Safety Car procedures in real time.
+
+Here is everything you need to know to get started and master the Race Control dashboard.
+
+---
+
+## 1. Initial Setup & Connection
+
+When you launch the downloaded `.exe` file, you will be greeted by a brief startup splash screen, followed by two critical setup prompts:
+
+* **Room Code:** Enter a unique identifier for your session (e.g., `LEMANS01` or `ENDURANCE_LEAGUE`).
+* **Password:** Set a secure password for the room.
+
+> **How it works:** The application connects to a cloud server. For drivers to appear on your dashboard, they must use their own client application and enter the exact same Room Code and Password you just created. If they enter the wrong password, their connection will be blocked, and you will see an "Auth Failed" message in your logs.
+
+---
+
+## 2. Dashboard Interface Overview
+
+Once logged in, you will hear a voice prompt confirming your director status, and the main dashboard will open. The interface is broken down into several key command panels.
+
+### Flag Command Buttons
+
+These buttons dictate the global track state and automatically enforce speed limits on all connected drivers.
+
+| Flag Command | Effect |
+| --- | --- |
+| 🟩 **Green Flag** | Clears all restrictions. Racing resumes, and speed limits are lifted. |
+| 🟨 **Safety Car (SC)** | Enforces a strict 60 km/h global speed limit as drivers form up behind the SC. |
+| 🟨 **VSC (60 km/h)** | Deploys a Virtual Safety Car, enforcing a track-wide 60 km/h limit. |
+| ⏱️ **VSC Ending (10s)** | Initiates a 10-second countdown, automatically throwing the Green Flag afterward. |
+| 🟥 **Red Flag** | Suspends the session. Enforces a 60 km/h speed limit for drivers returning to pits. |
+
+### Safety Car Speed Limits & Procedures
+
+When a Safety Car is deployed, you control the pace of the queue.
+
+* **SC: 125 km/h** / **SC: 150 km/h:** Instantly sets the global Safety Car speed limit to these preset values.
+* **SC: Free:** Lifts the Safety Car speed limit entirely.
+* **Lock Pace:** Reads the current live telemetry speed of the driver logged in as the "Safety Car" and instantly locks the rest of the field to that exact speed.
+* **Limit: 60 km/h** / **Limit: Lifted:** Quick toggles for custom lower limits or free pacing.
+* **SC Auto-Sync:** When toggled **ON** (Green), the system constantly reads the live speed of the Safety Car and dynamically updates the speed limit for the rest of the field in the background. *(Note: Do Not Use in normal procedures)*.
+* **Safety Car In This Lap:** Alerts all drivers that the SC is pitting and transfers pace control to the race leader.
+* **Auto SC Pit Detect:** When toggled **ON**, the system will automatically detect when the Safety Car enters the pit lane and trigger the "Safety Car In" protocol without you needing to press the button.
+
+### Driver Management (The Wave-Around System)
+
+This section monitors all connected drivers and their live telemetry speeds.
+
+* **Safety Car Line (Left List):** Drivers currently restricted by the active speed limit.
+* **Waved Through (Right List):** Drivers who have been released to overtake the Safety Car and regain their lap.
+
+**Managing Drivers:**
+
+1. Select one or more drivers in the *Safety Car Line*.
+2. Click **Release ->** to wave them through. Their speed limits will be instantly lifted so they can catch the back of the pack.
+3. If a driver needs to be put back under restrictions, select them in the *Waved Through* list and click **<- Recall (Enforce Limit)**.
+
+**Speed Violation Colors:**
+Driver names in the lists are color-coded based on their live telemetry to help you spot penalties easily:
+
+| Color Code | Status | Definition |
+| --- | --- | --- |
+| 🟢 **Green** | Safe | Driving safely at or below the active speed limit. |
+| 🟠 **Orange** | Warning | Driving up to 10 km/h over the speed limit. |
+| 🔴 **Red** | Violation | Driving more than 10 km/h over the limit. |
+
+### Live Logs & Telemetry
+
+At the bottom of the dashboard, three console windows provide real-time data:
+
+* **Live Logs & Violations:** Shows driver join/leave events, authentication successes/failures, and automatic penalty warnings.
+* **Background Actions:** A silent log showing the micro-adjustments being made (like auto-syncing speeds) without cluttering your main log.
+* **Live Safety Car Telemetry:** Displays a dedicated, real-time feed of the Safety Car's exact speed on track.
+
+---
+
+## 3. Example Scenario: Deploying a Safety Car
+
+To give you an idea of how this flows during a live race, here is a standard procedure:
+
+1. **Incident Occurs:** You click **Safety Car**. The system alerts all drivers and enforces a 60 km/h limit to safely bunch the field.
+2. **Forming Up:** The designated Safety Car driver logs into the system. You toggle **SC Auto-Sync: ON**. Now, whatever speed the Safety Car drives, the rest of the field is electronically restricted to match it.
+3. **Lapped Cars:** You notice a lapped driver in the queue. You select their name in the *Safety Car Line* and click **Release ->**. They are freed from the speed limit to drive around the track and catch the back of the pack. Once they catch up, you select their name and click **<- Recall** to restrict them again.
+4. **Going Green:** The track is clear. You click **Safety Car In This Lap**. Drivers are notified. Once the SC pulls away, you click **Green Flag** to release the field.
+
+---
+
+## 4. Important Notes for Users
+
+* 🔊 **Audio Cues:** The app uses Windows Text-to-Speech and radio click sound effects to notify you of critical events (like drivers being recalled). Make sure your speakers or headset are unmuted.
+* 🏎️ **Safety Car Recognition:** For the system to properly recognize the Safety Car driver (and prevent duplicates), they must connect using a name like `Safety Car`, `SC`, or `Safety-Car`.
+* ❌ **Closing the App:** When you are done with the session, simply close the window. The app will disconnect from the cloud server and bid you farewell.
