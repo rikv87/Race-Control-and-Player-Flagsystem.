@@ -6,7 +6,7 @@ The idea for this software was born out of a desire to make sim racing feel as a
 
 So, I decided to build our own in-house program from scratch.
 
-It took a long time and a lot of trial and error to get the telemetry, networking, and UI perfectly synced. But after countless hours of development and testing, we have finally arrived at the highly stable builds you are using today: Race-Control V1.7.5 and Player-Flagsystem V2.7.5.
+It took a long time and a lot of trial and error to get the telemetry, networking, and UI perfectly synced. But after countless hours of development and testing, we have finally arrived at the highly stable builds you are using today: Race-Control V1.7.8 and Player-Flagsystem V2.7.8.
 
 Once we saw how much this system elevated our own league, we knew we couldn't just keep it to ourselves. We strongly believe in not gatekeeping good tools, which is why we have released this software to the world for everyone in the sim racing community to use and enjoy.
 
