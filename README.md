@@ -1,3 +1,24 @@
+The Story Behind the Software
+
+Hi, I’m Rik vd Kruk, Co-Founder of RehnSports Racing and the creator of this application.
+
+The idea for this software was born out of a desire to make sim racing feel as authentic as possible. When RehnSports Racing began planning a massive Endurance Series, we realized we desperately needed a reliable, immersive way to communicate live track conditions and safety car procedures directly to our drivers. We searched for a solution, but there simply wasn't any software out there that did exactly what we needed.
+
+So, I decided to build our own in-house program from scratch.
+
+It took a long time and a lot of trial and error to get the telemetry, networking, and UI perfectly synced. But after countless hours of development and testing, we have finally arrived at the highly stable builds you are using today: Race-Control V1.7.5 and Player-Flagsystem V2.7.5.
+
+Once we saw how much this system elevated our own league, we knew we couldn't just keep it to ourselves. We strongly believe in not gatekeeping good tools, which is why we have released this software to the world for everyone in the sim racing community to use and enjoy.
+
+Need Help or Support?
+If you run into any problems, have questions, or want to share feedback, I am always happy to help:
+
+   Discord: Send me a direct message (username): rikuvanderkruk (this is the fastest way to reach me).
+
+   Email: You can also reach me at rikvdkruk@gmail.com.
+
+Thank you for downloading, and I'll see you on the track!
+--
 # Race-Control-and-Player-Flagsystem.
 These companion desktop apps form a cloud-connected race control system for Le Mans Ultimate. The first acts as the director's command center to manage flags, speed limits, and telemetry. The second is a driver dashboard that tracks telemetry, enforces rules, and provides real-time audio and visual alerts.
 Overview of the Application
@@ -23,7 +44,7 @@ Standalone Version & Custom Discord Integration
 
 This specific version uploaded to GitHub is a standalone version designed to run independently without requiring a Discord webhook.
 
-If you want a version integrated with Discord that sends automated flag messages directly into your own Discord channel, you can reach out via E-mail: rikvdkruk@gmail.com. A special customized version will be provided for those who want Discord notifications for race control events and flags.
+If you want a version integrated with Discord that sends automated flag messages directly into your own Discord channel, you can reach out via E-mail: rikvdkruk@gmail.com or Discord: rikuvanderkruk. A special customized version will be provided for those who want Discord notifications for race control events and flags.
 
 
 # 🏁 LMU Race Control Hub: User Manual
