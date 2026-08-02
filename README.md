@@ -1,4 +1,4 @@
-The Story Behind the Software
+# The Story Behind the Software
 
 Hi, I’m Rik vd Kruk, Co-Founder of RehnSports Racing and the creator of this application.
 
