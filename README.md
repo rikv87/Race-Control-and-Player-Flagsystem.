@@ -4,17 +4,17 @@ Overview of the Application
 
 This project consists of two companion desktop applications designed to create a cloud-connected race control and telemetry system for Le Mans Ultimate (LMU). Together, they bridge the gap between a race director and drivers on the track by utilizing an MQTT broker for real-time cloud communication.
 
-    Race Control Hub (Director App): Allows the session administrator to manage the race from a command center. Key features include deploying flags (Green, VSC, Safety Car, Red), setting and syncing speed limits, managing driver queues (such as the Safety Car line and waved-around drivers), and monitoring live telemetry and violations.
+ Race Control Hub (Director App): Allows the session administrator to manage the race from a command center. Key features include deploying flags (Green, VSC, Safety Car, Red), setting and syncing speed limits, managing driver queues (such as the Safety Car line and waved-around drivers), and monitoring live telemetry and violations.
 
-    Player Dashboard (Driver App): Runs alongside the simulator, connecting directly via shared memory to read vehicle telemetry. It provides real-time audio and visual alerts for flag statuses, enforces speed limits during caution periods, detects pit lane entries, and features an overlay mode for in-game visibility.
+ Player Dashboard (Driver App): Runs alongside the simulator, connecting directly via shared memory to read vehicle telemetry. It provides real-time audio and visual alerts for flag statuses, enforces speed limits during caution periods, detects pit lane entries, and features an overlay mode for in-game visibility.
 
 How to Use It
 
-    Launch Race Control: Start the Race Control script. You will be prompted to enter a Room Code and a Password to establish a secure session on the cloud network.
+ Launch Race Control: Start the Race Control script. You will be prompted to enter a Room Code and a Password to establish a secure session on the cloud network.
 
-    Launch the Driver Dashboard: Start the player dashboard script. Enter your Driver Name, the matching Room Code, and the Room Password set by the director.
+ Launch the Driver Dashboard: Start the player dashboard script. Enter your Driver Name, the matching Room Code, and the Room Password set by the director.
 
-    Connect & Race: Once authenticated, the dashboard connects to the cloud server. The race director can then trigger flags and speed constraints, which instantly transmit to all connected drivers with automated audio announcements and visual indicators.
+ Connect & Race: Once authenticated, the dashboard connects to the cloud server. The race director can then trigger flags and speed constraints, which instantly transmit to all connected drivers with automated audio    announcements and visual indicators.
 
 Why Versioning & GitHub Upload Timing Matter
 
