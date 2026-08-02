@@ -125,9 +125,7 @@ To give you an idea of how this flows during a live race, here is a standard pro
 
 # 🏁 Player Flagsystem Dashboard: User Manual
 
-Welcome to the **Player Flagsystem Dashboard**! This application is designed to be your in-car digital race engineer and flag display. By running this executable alongside your sim racing title, you will receive real-time flag updates, speed restrictions, and audio alerts directly from your Race Director.
-
-Here is a comprehensive guide on how to set up and use the application during your race session.
+This application is designed to be your in-car digital race engineer and flag display. By running this executable alongside your sim racing title, you will receive real-time flag updates, speed restrictions, and audio alerts directly from your Race Director.
 
 ---
 
