@@ -121,3 +121,81 @@ To give you an idea of how this flows during a live race, here is a standard pro
 * 🔊 **Audio Cues:** The app uses Windows Text-to-Speech and radio click sound effects to notify you of critical events (like drivers being recalled). Make sure your speakers or headset are unmuted.
 * 🏎️ **Safety Car Recognition:** For the system to properly recognize the Safety Car driver (and prevent duplicates), they must connect using a name like `Safety Car`, `SC`, or `Safety-Car`.
 * ❌ **Closing the App:** When you are done with the session, simply close the window. The app will disconnect from the cloud server and bid you farewell.
+
+
+# 🏁 Player Flagsystem Dashboard: User Manual
+
+Welcome to the **Player Flagsystem Dashboard**! This application is designed to be your in-car digital race engineer and flag display. By running this executable alongside your sim racing title, you will receive real-time flag updates, speed restrictions, and audio alerts directly from your Race Director.
+
+Here is a comprehensive guide on how to set up and use the application during your race session.
+
+---
+
+## 1. Initial Setup & Login
+
+When you launch the `.exe` file, you will see a brief startup screen followed by three login prompts. You must get the room details from your Race Director before joining.
+
+* **In-game Name:** Enter your exact racing name or team name. *(Note: If you are driving the actual Safety Car, you must enter `Safety Car` or `SC` here—more details below).*
+* **Room Code:** Enter the exact Room Code provided by your Race Director (e.g., `LEMANS01`).
+* **Room Password:** Enter the password for the room.
+
+### Connection Status
+
+Once the main dashboard opens, look at the **Cloud Connection** light in the middle of the app:
+
+| Status Light | Meaning |
+| --- | --- |
+| 🔴 **Red** | Disconnected or incorrect password. (A "Retry Connection" button will appear). |
+| 🟡 **Yellow** | Connecting to the cloud... |
+| 🟢 **Green** | Connected and ready to race! You will hear a voice confirm your connection. |
+
+---
+
+## 2. Understanding the Dashboard
+
+The interface is designed to be highly visible while you are driving. It displays three main pieces of information:
+
+* **FLAG (Top):** Shows the current track state (e.g., `FLAG: GREEN`, `FLAG: SC`, `FLAG: VSC`, `FLAG: RED`).
+* **TARGET (Middle):** Shows the speed you are required to drive. `TARGET: FREE` means you can race at full speed. A number (e.g., `TARGET: 60 km/h`) means you are under a strict speed limit.
+* **Current Speed (Bottom):** Reads live telemetry directly from your game to show how fast you are currently going.
+* **Countdown Timer:** When a Safety Car or VSC is deployed, a countdown timer will appear here (with audio cues) giving you time to slow down before the speed limit is strictly enforced.
+
+---
+
+## 3. Key Features & Overlay Controls
+
+Because you need to see this dashboard while playing your game, the app includes special viewing modes.
+
+### 📌 Overlay Mode
+
+Click the **"Enable Overlay Mode"** button to pin the application on top of your game window.
+
+* This makes the app "Always on Top" so it won't disappear behind your game.
+* **Opacity Slider:** Use the slider that appears to make the window transparent, allowing you to see the track behind the dashboard.
+
+### ⚙️ Hide Controls (Bigger Telemetry)
+
+Once you have set your opacity and enabled the overlay, click **"Hide Controls"**. This removes the buttons and sliders, allowing you to shrink the window down so it only displays the vital Flag and Target speed information.
+
+> **Pro Tip:** The text automatically scales! You can click and drag the edges of the window to make the text as big or small as you need it to be on your screen.
+
+---
+
+## 4. In-Game Procedures & Penalties
+
+The application reads live telemetry from your car. Here is how it behaves during different race scenarios:
+
+* **Safety Car / VSC Deployment:** When the Race Director throws a yellow flag, a countdown will begin. You must reduce your speed to the Target Speed before the countdown hits zero.
+* **Speed Violations:** If you exceed the Target Speed by more than 10 km/h once the limit is enforced, your dashboard will flash a red penalty warning, you will receive an audio penalty command, and an alert will be sent instantly to the Race Director.
+* **Pit Lane Detection:** The app automatically knows when you enter the pit lane. It will enforce a 60 km/h target speed regardless of whether the track is Green or Yellow. Speeding in the pits will also trigger a warning.
+* **Wave Arounds:** If the Director grants you a wave-around to pass the Safety Car, your dashboard will update to `TARGET: FREE (WAVE AROUND)`. You are allowed to speed up until the Director recalls you to the queue.
+
+---
+
+## 5. 🚨 Special Instructions: Playing as the "Safety Car"
+
+If your job for the session is to drive the physical Safety Car on track, this app has a hidden mode just for you.
+
+* **How to activate:** When logging in, type `Safety Car`, `SC`, or `Safety-Car` as your In-game Name.
+* **What it does:** Your app will operate in **"Pace Mode"**. Instead of restricting your speed, your app will constantly stream your live telemetry directly to the Race Director.
+* **Auto-Sync:** This allows the Race Director to lock the rest of the racing field to your exact live speed. When the Director releases you, you will hear a specialized voice line telling you to clear the track and return to the pits.
