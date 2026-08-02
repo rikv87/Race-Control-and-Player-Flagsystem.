@@ -219,6 +219,54 @@ If your job for the session is to drive the physical Safety Car on track, this a
 * **What it does:** Your app will operate in **"Pace Mode"**. Instead of restricting your speed, your app will constantly stream your live telemetry directly to the Race Director.
 * **Auto-Sync:** This allows the Race Director to lock the rest of the racing field to your exact live speed. When the Director releases you, you will hear a specialized voice line telling you to clear the track and return to the pits.
 ---
+# 🔌 LMU Shared Memory Plugin Setup
+
+To get the live speed and pit lane telemetry working in the Player Flagsystem, Le Mans Ultimate (LMU) needs to be able to broadcast its data to the app. Because LMU is built on the rFactor 2 engine, it requires a specific Shared Memory Plugin to allow outside apps to read this data.
+
+> **Note:** If you already use telemetry apps like CrewChief, SimHub, or TinyPedal, you likely already have this installed and enabled! You can skip to **Step 3** to double-check.
+
+Here is the step-by-step guide to installing and enabling the plugin:
+
+## 1. Download the Plugin
+
+You need the standard rFactor 2 Shared Memory Plugin (created by TheIronWolf).
+
+* Go to the official GitHub releases page: **rF2SharedMemoryMapPlugin Releases**
+* Download the latest release `.zip` file.
+* Extract the `.zip` file. Inside, you are looking for a specific file named: `rFactor2SharedMemoryMapPlugin64.dll`
+
+## 2. Place the File in Your Game Folder
+
+You need to put the downloaded `.dll` file directly into your Le Mans Ultimate Plugins folder.
+
+* Open your File Explorer and navigate to your Steam installation of LMU. By default, this is located here:
+`C:\Program Files (x86)\Steam\steamapps\common\Le Mans Ultimate\Plugins`
+* Drag and drop the `rFactor2SharedMemoryMapPlugin64.dll` file into this folder.
+
+## 3. Enable the Plugin in the Game Files
+
+Just putting the file in the folder isn't enough; the game needs to be told to turn it on.
+
+* Launch Le Mans Ultimate once to the main menu, then close it. This forces the game to recognize the new plugin file and update its configuration files.
+* Navigate to your LMU player folder, usually located here:
+`C:\Program Files (x86)\Steam\steamapps\common\Le Mans Ultimate\UserData\player`
+* Find the file named `CustomPluginVariables.json` and open it using Notepad.
+* Look for the `rFactor2SharedMemoryMapPlugin64.dll` entry and make sure the `" Enabled"` value is set to `1` (it defaults to `0`).
+
+It should look exactly like this:
+
+```json
+"rFactor2SharedMemoryMapPlugin64.dll":{
+    " Enabled":1,
+    " Project":""
+}
+
+```
+
+## 🎉 You're Done!
+
+Once the plugin is enabled in the `.json` file, you are ready to race. You can place the Player Flagsystem `.exe` anywhere on your PC (like your Desktop). When you run it alongside the game, it will automatically connect in the background and read your live telemetry.
+---
 <img width="1254" height="1254" alt="RACE-CONTROL" src="https://github.com/user-attachments/assets/262d8db3-be36-4ec9-8010-7e0232c2eb94" />
 <img width="1254" height="1254" alt="PLAYER-FLAGSSYSTEM" src="https://github.com/user-attachments/assets/2b2fc3c2-ce00-4434-9529-05cd04931410" />
 <img width="412" height="480" alt="Screenshot 2026-08-02 085353" src="https://github.com/user-attachments/assets/aa7d4cd0-7e3e-4acf-b695-cb9c238c9b67" />
