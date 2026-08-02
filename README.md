@@ -218,3 +218,13 @@ If your job for the session is to drive the physical Safety Car on track, this a
 * **How to activate:** When logging in, type `Safety Car`, `SC`, or `Safety-Car` as your In-game Name.
 * **What it does:** Your app will operate in **"Pace Mode"**. Instead of restricting your speed, your app will constantly stream your live telemetry directly to the Race Director.
 * **Auto-Sync:** This allows the Race Director to lock the rest of the racing field to your exact live speed. When the Director releases you, you will hear a specialized voice line telling you to clear the track and return to the pits.
+---
+<img width="1254" height="1254" alt="RACE-CONTROL" src="https://github.com/user-attachments/assets/262d8db3-be36-4ec9-8010-7e0232c2eb94" />
+<img width="1254" height="1254" alt="PLAYER-FLAGSSYSTEM" src="https://github.com/user-attachments/assets/2b2fc3c2-ce00-4434-9529-05cd04931410" />
+<img width="412" height="480" alt="Screenshot 2026-08-02 085353" src="https://github.com/user-attachments/assets/aa7d4cd0-7e3e-4acf-b695-cb9c238c9b67" />
+<img width="293" height="172" alt="Screenshot 2026-08-02 085321" src="https://github.com/user-attachments/assets/f4ae8579-5ed8-4b03-bc33-7400eb623aea" />
+<img width="303" height="172" alt="Screenshot 2026-08-02 085308" src="https://github.com/user-attachments/assets/f771a53c-ebff-4321-9cb6-c78bb09ce6dc" />
+<img width="295" height="171" alt="Screenshot 2026-08-02 085254" src="https://github.com/user-attachments/assets/922aae85-52ae-4de4-b6ef-b335e873810a" />
+<img width="629" height="1000" alt="Screenshot 2026-08-02 083808" src="https://github.com/user-attachments/assets/8fd33c1b-6df8-46a9-a896-88ff5d16d085" />
+<img width="373" height="193" alt="Screenshot 2026-08-02 083748" src="https://github.com/user-attachments/assets/ad7794c6-d198-4d12-a526-b04465808573" />
+<img width="365" height="187" alt="Screenshot 2026-08-02 083726" src="https://github.com/user-attachments/assets/428a6942-67ef-4e16-945a-8ca783f7c071" />
