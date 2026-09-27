@@ -14,7 +14,7 @@ The idea for this software was born out of a desire to make sim racing feel as a
 
 So, I decided to build our own in-house architecture from scratch.
 
-It took a long time and a lot of trial and error to get the telemetry parsing, network syncing, and UI states perfectly aligned. But after countless hours of development and testing, we have finally arrived at the highly stable builds you see today: **Race-Control V1.7.8** and **Player-Flagsystem V2.8.1**.
+It took a long time and a lot of trial and error to get the telemetry parsing, network syncing, and UI states perfectly aligned. But after countless hours of development and testing, we have finally arrived at the highly stable builds you see today: **Race-Control V1.8.1** and **Player-Flagsystem V2.8.1**.
 
 *Why the jump in version numbers?* I bypassed standard semantic versioning (like v1.0.0) for the initial public release because the early development process was full of bugs and stability hurdles. I deliberately delayed uploading this to GitHub until all major problems were ironed out and the system actually worked reliably under heavy race conditions.
 
