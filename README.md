@@ -390,7 +390,9 @@ Everything is logged to `build_log.txt`.
 
 ## 📸 Screenshots
 
-*(Screenshots of Race Control V2.5.1, the Player Flagsystem V4.5.1 dashboard and the LED overlay)*
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/716d42e6-7d83-472f-b538-4c48ff4b820d" />
+<img width="1181" height="1002" alt="image" src="https://github.com/user-attachments/assets/9cc2dd84-3503-441a-aced-04f657dc2fa6" />
+
 
 ---
 
